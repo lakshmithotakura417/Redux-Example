@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  /* display:flex;
+  flex-wrap: nowrap;
+  background-color: gray; */
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: gray;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar >div{
+background-color: white;
+text-align: center;
+margin:10px;
+color: black;
+font-size: 20px;
+padding:10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.user-input >input{
+   height:20px;
+}
+.user-input > button{
+  background-color: green;
+  height: 30px;
+  border:1px solid white;
+  border-radius: 1rem;
+  width:80px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.post-container{
+  display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.poster{
+  width: 80vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 150px;
+}
+.poster-image >img{
+  width:300px;
+  height:200px
+}
+.poster-buttons {
+  margin:20px
+}
+.poster-buttons  >button{
+  margin: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+} 
+.poster-items{
+  border-left: 1px solid gray;
+    width: 20vw;
+    height: 85vh;
+    position: absolute;
+    right: 0;
+}
+.userForm {
+  width: 100%;
+  height: auto;
+  padding-left: 100px;
+  display: flex;
+  justify-content: space-around;
 }
